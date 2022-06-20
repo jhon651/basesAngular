@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h1>Heroe componente</h1>
+
+    <dl>
+        <td> Nombre: </td>
+        <dd> {{nombre}} </dd>
+    </dl>
+    <dl>
+        <td> Edad: </td>
+        <dd> {{edad}} </dd>
+    </dl>
+    <dl>
+        <td> Función: </td>
+        <dd> {{obtenerNombre()}} </dd>
+    </dl>
+    <dl>
+        <td> Capitalizado: </td>
+      <!--Mayúscula-->  <dd>  {{nombre.toUpperCase()}} </dd>
+    </dl>
+    <dl>
+        <td> Capitalizado get: </td>
+        <dd>  {{nombreCapitalizado}} </dd>
+    </dl>
+    <td>
+        <button class="btn btn-primary" (click)="cambiarNombre()">Cambiar Heroe</button>
+    </td>
+    <td>
+        <button class="btn btn-success" (click)="cambiarEdad()">Cambiar Edad</button>
+    </td>
+</div>
